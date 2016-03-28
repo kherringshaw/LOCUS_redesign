@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+    <title>Details on English 102</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"/>     
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/buttonScripts.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <script>
+       $(document).ready(function(){
+       $( "#enrollMessage" ).dialog({ autoOpen: false });
+       $( "#enroll" ).click(function() {
+       $( "#enrollMessage" ).dialog( "open" );
+       });
+       });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#enroll").click(function(){
+            $("#pendingClass").text("-English 102");
+        });
+    });
+    </script>
+
+</head>
+<body>
+       
+    <div class="container-fluid">            
+            <div class="row-fluid"> 
+                <div class="span12" id= "top"><p id="LOCUS">LOCUS</p><p id="name">Welcome, Nick Hayward</p></div></div></div>
+        
+    <div class="container-fluid">            
+            <div class="row-fluid"> 
+                <div class="span12" id="snapshot">
+                    <p><center>Additional Class Information</center></p></div></div></div>
+    
+    <div class="container-fluid">            
+       <div class="row-fluid">
+         <div class="span2" id="shoppingCart"><center><p id="cartText">Shopping Cart</p></center>
+          <center><p id="cartText">Class Cart</p></center>
+                <p id="enrollDate">*Next enrollment date is April 9*</p>
+                <center><select id="enrollSemester">  
+                    <option value="0">Enrollment Semester</option>
+                    <option value="1">Summer 2015</option>
+                    <option value="2">Fall 2015</option>
+                </select></center>
+                <p id="enrollment">Pending enrollment:</p>
+                <p id="pendingClass">- None</p>
+                <center><button type="button" id="finalEnroll">Enroll</button></center>
+                <center><select id="Schedules" onchange="schedulesFunction()">  
+                    <option value="0">View Schedule</option>
+                    <option value="1">Spring 2015</option>
+                    <option value="2">Fall 2014</option>
+                    <option value="3">Summer 2014</option>
+                </select></center></div>
+    
+          <div class="span10" id="detailedInfo">    
+              
+              <h2 class="infoHeadings">
+                  Class Info
+              </h2>
+              
+              <p class="classDetailText">English 102</p>
+          
+              <h2 class="infoHeadings">
+                  Class Description
+              </h2>    
+          
+              <p class="classDetailText"> This class is an introduction to the works of William Shakespeare. Shakespeare was an English poet, playwright, and actor,
+              widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often
+              called England's national poet and the "Bard of Avon". His extant works, including some collaborations, consist of
+              about 38 plays, 154 sonnets, two long narrative poems, and a few other verses, of which the authorship of some is
+              uncertain. His plays have been translated into every major living language and are performed more often than those
+              of any other playwright.</p>
+          
+              <h2 class="infoHeadings">
+                  Semester
+              </h2>
+              
+              <p class="classDetailText"> Fall 2015</p>
+          
+          
+              <h2 class="infoHeadings">
+                  Day/Time
+              </h2>
+          
+              <p class="classDetailText">Mondays, 7:00-9:30pm</p>
+          
+              <h2 class="infoHeadings">
+                  Semester Schedule
+              </h2>
+              
+              <p class="classDetailText">8/25/15-12/5/15</p>       
+              
+              
+              <h2 class="infoHeadings">
+                  Professor
+              </h2>
+          
+              <p class="classDetailText">Professor Smith</p>
+      
+              <h2 class="infoHeadings">
+                  Location
+              </h2>
+          
+              <p class="classDetailText">Water Tower Campus, Corboy Hall Room 901</p>
+          
+              <h2 class="infoHeadings">
+                  Credit Hours
+              </h2>
+              
+              <p class="classDetailText">3.00</p>
+          
+              <h2 class="infoHeadings">
+                  Class Status
+              </h2>
+          
+              <p class="classDetailText">Open</p>
+          
+              <h2 class="infoHeadings">
+                  Available Seats
+              </h2>
+              
+              <p class="classDetailText">17/35</p>
+          
+          </div></div></div>
+    
+    <div id="enrollMessage" title="Success!"><p><font face="Georgia" size="4">
+     English 102 for Fall 2015 has been added to the class Shopping Cart</font></p></div>
+    
+    <div class="container-fluid">            
+    <div class="row-fluid">
+        <div class="span2" id="leftPanel2"></div>
+        <div class="span10">
+         <button type="button" id="mainPage" onclick="mainPageClick();">Main page</button>
+          <button type="button" id="back" onclick="backClick();">Class list</button>
+          <button type="button" id="enroll" onclick="enrollClick();">Add to Cart</button>
+          
+        </div></div></div>
+                             
+    </body>
+</html>

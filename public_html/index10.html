@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+              <!-- Le styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"/>
+        <link rel="stylesheet" href="css/Style.css" type="text/css"/>       
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="js/jquery.diagram.js"></script> 
+        <style type="text/css">
+            body {
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
+        </style>
+
+    <!--Load the AJAX API-->
+    <script src="js/buttonScripts.js"></script>     
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      google.load('visualization', '1.0', {'packages':['corechart']});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'ClassCategory');
+        data.addColumn('number', 'ClassesTaken');
+
+        data.addRows([
+          ['English', 11],
+          ['Science', 6],
+          ['Math', 18],
+          ['History', 10],
+          ['Communications', 6]
+        ]);
+
+        var options = {
+            width: 400,
+            height: 400,
+            legend: 'none',
+            colors: ['#9a32cd', '#6495ed', '#006400', '#ff4500', '#ff0000']};
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <title>LOCUS</title>
+    <!-- FAVICON -->
+<link rel="icon" href="images/favicon.ico" />
+  </head>
+    <body>
+
+        
+        <div class="row-fluid" > 
+        <div class="span12 backgroundColor" >
+            <div id="top">LOCUS<p id="name">Welcome, Nick Hayward</p></div>
+            <div id="header">Student Snapshot</div></div>
+            
+        
+            <div class="row-fluid">
+                        
+                <div class="span2 " id="shoppingCart"> 
+                    <div id="header2">Class Cart</div>
+                    <div id="bodyCart">*Enrollment date is April 9*</div>
+                    <center><select id="enrollSemester">  
+                    <option value="0">Semester</option>
+                    <option value="1">Summer 2015</option>
+                    <option value="2">Fall 2015</option>
+                    </select></center>
+                
+                    <div id="bodyCart">Pending enrollment:</div>
+                    <div id="bodyCart">- None</div>
+                    <center><select id="Schedules" onchange="schedulesFunction()">  
+                    <option value="0">View Schedule</option>
+                    <option value="1">Spring 2015</option>
+                    <option value="2">Fall 2014</option>
+                    <option value="3">Summer 2014</option>
+                    </select></center></div>
+                        
+                        <div class="span4">
+                            <div id="header2">Course Progress</div>                           
+                            
+                            <center><div id="chart_div"></div></center>
+
+                        </div><!--/span-->
+
+                        <div class="span4">
+                            <div id="header2">Course Sections</div>
+                            <center><table id="sections" >
+                                <tr class="classRow">
+                                    <td class="classData"><div id="progressBar1" data-percent="72%"></div></td>
+                                    <td class="classData" id="english">English</td>
+                        <td class="sectionsData"><a href = "AvailableEnglishClasses.html">  Enroll</a></td>
+                        <td class="sectionsData"><a href = "CompletedEnglishClasses.html">  Completed</a></td>
+                                </tr>
+                                <tr class="classRow">
+                                    <td class="classData"><div id="progressBar2" data-percent="33%"></div></td>
+                                    <td class="classData" id="science">Science</td>
+                                    <td class="classData">Enroll</td>
+                                    <td class="classData">Completed</td>
+                                </tr>
+                                <tr class="classRow">
+                                    <td class="classData"><div id="progressBar3" data-percent="50%"></div></td>
+                                    <td class="classData" id="math">Math</td>
+                                    <td class="classData">Enroll</td>
+                                    <td class="classData">Completed</td>
+                                </tr>
+                                <tr class="classRow">
+                                    <td class="classData"><div id="progressBar4" data-percent="15%"></div></td>
+                                    <td class="classData" id="history">History</td>
+                                    <td class="classData">Enroll</td>
+                                    <td class="classData">Completed</td>
+                                </tr>
+                                <tr class="classRow">
+                                    <td class="classData"><div id="progressBar5" data-percent="100%"></div></td>
+                                    <td class="classData" id="communications">Communications</td>
+                                    <td class="classData">Enroll</td>
+                                    <td class="classData">Completed</td>
+                                </tr>
+                                                    <tr class="sectionsRow">
+                        <td class="sectionsData"><div id="progressBar6" data-percent="71%"></div></td>
+                        <td class="sectionsData" id="totalCredits">Total Credits: 90/128</td>
+                        <td class="sectionsData"></td>
+                        <td class="sectionsData"></td>
+                    </tr>
+
+                                </table></center>
+
+                        </div><!--/span-->
+                        
+                        <div class="span2">
+                <table id="studentInfo">                         
+                    <div id="header2">Student Info</div>    
+                    <tr id="studentInfoTableRow">
+                    <td class="infoRow">Student Name:</tr>
+                    <td class="infoRow2">Nicholas Hayward</tr>
+                    <td class="infoRow">Student ID Number:</tr>
+                    <td class="infoRow2">0001234</tr>
+                    <td class="infoRow">Major/Minor:</tr>
+                    <td class="infoRow2">Computer Science/archaeology</tr>
+                    <td class="infoRow">Address:</tr>
+                    <td class="infoRow2">500 State St, Chicago IL </tr>
+                    <td class="infoRow">Phone Number:</tr>
+                    <td class="infoRow2">773-555-5555</tr>
+                    <td class="infoRow">Cumulative GPA:</tr>
+                    <td class="infoRow2">3.85 </tr>
+                    <td class="infoRow">Major GPA:</tr>
+                    <td class="infoRow2">3.91 </td>
+                    
+                    </tr>
+
+                </table>            
+                            
+                        </div><!--/span-->
+                    </div><!--/row-->
+                    <div class="container-fluid">            
+        <div class="row-fluid">
+            <div class="span2"></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="transcriptPageClick();">Transcripts</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="advisorsPageClick();">Advisors</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="financesPageClick();">Financial Info</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="catalogPageClick();">Course Catalog</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="majMinPageClick();">Change Major/Minor</button></div></div></div>
+
+                </div>
+        
+        
+
+
+                
+    <script> 
+        $(function() {
+            $('#progressBar1').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: "#9a32cd", // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    <script> 
+        $(function() {
+            $('#progressBar2').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: "#6495ed", // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    
+    <script> 
+        $(function() {
+            $('#progressBar3').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: "#006400", // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    
+    <script> 
+        $(function() {
+            $('#progressBar4').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: "#ff4500", // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    
+    <script> 
+        $(function() {
+            $('#progressBar5').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: "#ff0000", // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    
+    <script> 
+        $(function() {
+            $('#progressBar6').diagram({ 
+            size: "40", // graph size 
+            borderWidth: "5", // border width 
+            bgFill: "#f5f5f5", // background color 
+            frFill: 'black', // foreground color 
+            textSize: 13, // text color 
+            font: "san_serif", // font 
+            textWeight: "bold",
+            textColor: 'black' // text color 
+            }); 
+            
+            })
+                
+    </script>
+    
+    
+</body>
+       
+</html>

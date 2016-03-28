@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+              <!-- Le styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"/>
+        <link rel="stylesheet" href="css/Style.css" type="text/css"/>       
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="js/jquery.diagram.js"></script> 
+        <style type="text/css">
+            body {
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
+        </style>
+
+    <!--Load the AJAX API-->
+    <script src="js/buttonScripts.js"></script>     
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+ 
+    <title>LOCUS - Course Catalog</title>
+    
+        <!-- FAVICON -->
+<link rel="icon" href="images/favicon.ico" />
+  </head>
+    <body>
+
+        
+        <div class="row-fluid" > 
+            <div class="span12 backgroundColor" >
+            <div id="header">LOCUS</div><br>
+            <div id="header">Student Snapshot <p id="name">Welcome, Nick Hayward</p></div></div>
+            
+        
+            <div class="row-fluid">
+                        
+                <div class="span2 " id="shoppingCart"> 
+                    <div id="header2">Class Cart</div>
+                    <div id="bodyCart">*Enrollment date is April 9*</div>
+                    <center><select id="enrollSemester">  
+                    <option value="0">Semester</option>
+                    <option value="1">Summer 2015</option>
+                    <option value="2">Fall 2015</option>
+                    </select></center>
+                
+                    <div id="bodyCart">Pending enrollment:</div>
+                    <div id="bodyCart">- None</div>
+                    <center><select id="Schedules" onchange="schedulesFunction()">  
+                    <option value="0">View Schedule</option>
+                    <option value="1">Spring 2015</option>
+                    <option value="2">Fall 2014</option>
+                    <option value="3">Summer 2014</option>
+                    </select></center></div>
+
+
+        
+                <div class="span8">  
+                <img src="images/courseCatalog.png" alt="Course Catalog" height="800" width="800"></div>
+
+
+
+    
+        
+    <div class="span2">
+        <br><br>
+
+        <button type="button" class="mainPage" onclick="mainPageClick();">Main Page</button>
+    
+    </div>
+    </div><!--/row-->
+        
+        <div class="container-fluid">            
+                        <div class="row-fluid">
+                            <div class="span2"></div>
+                            <div class="page-header"></div>
+                        </div>
+        <div class="row-fluid">
+            <div class="span2"></div>
+            
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="transcriptPageClick();">Transcripts</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="advisorsPageClick();">Advisors</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="financesPageClick();">Financial Info</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="catalogPageClick();">Course Catalog</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="majMinPageClick();">Change Major/Minor</button></div></div></div>
+
+                </div>
+        
+        
+
+
+    
+</body>
+       
+</html>

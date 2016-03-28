@@ -1,0 +1,481 @@
+#bodyCart{
+    margin: 0px;
+    padding: 6px;
+    color: #000000; 
+    font-size: 12px;
+    font-weight: bold;
+}
+    .backgroundColor {
+            background-color:#800000;
+    }
+#header {
+    text-align:center;
+    color:white;
+    vertical-align: middle;
+    font-size: 25px;
+
+}
+
+#header2 {
+    text-align:center;
+    color:#000000;
+    vertical-align: middle;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+#headerCart {
+    text-align:center;
+    color:white;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 5px;
+}
+
+body{
+    margin: 0px;
+    font-family: "helvetica";    
+}
+
+#top {
+    text-align:left;
+    color:white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+    
+#LOCUS {
+
+    text-align:left;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#name {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+#shoppingCart {
+    background-color:#d3d3d3;
+    float:left;
+    height: 400px;
+}
+
+#cartText {
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
+
+
+
+#enrollment {
+    color:white;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#enrollDate {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#pendingClass{
+    margin: 0px;
+    padding: 6px;
+    color: #000000; 
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+#chart_div {
+    margin-left: -40px;
+}
+
+#classes
+{
+
+    text-align: center;
+    font-size: 10pt;
+}
+    
+#courseSections{
+
+    
+}
+#sections
+{
+
+    border: none;
+    border-collapse: collapse;
+    table-layout: auto;
+    font-size: 13px;
+
+}
+
+.sectionsData {
+    font-size: 13px;
+    
+}
+
+#classTable
+{
+ border: 2px solid black;
+ border-collapse:collapse;
+ margin-top: 13px;
+
+}
+
+.classHeading,.classRow, .classData
+{
+    border: 0px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.classHeading
+{
+    background-color:black;
+    color:white;
+    
+}
+
+#classCaption
+{
+  background: #d3d3d3;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+
+  
+}
+        
+.infoHeadings
+{
+    background: #d3d3d3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.classDetailText {    
+    font-size:12px;
+}
+
+
+#english {
+    text-align: right;
+    padding-right: 15px;
+    color: #CA535C;
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+#science {
+    text-align: right;
+    padding-right: 15px;
+    color: #D1B12D;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#math{
+    text-align: right;
+    padding-right: 15px;
+    color: #6EA634;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#history {
+    text-align: right;
+    padding-right: 15px;
+    color: #0065A9;
+    font-weight: bold;
+    font-size: 15px;
+}
+#communications {
+    text-align: right;
+    padding-right: 15px;
+    color: #757778;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#totalCredits {
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+#leftPanel {
+    background-color:#800000;
+    float:left;
+    height: 500px;
+}
+
+#leftPanel2 {
+    background-color:#800000;
+    float:left;
+    height: 500px;
+    margin-top: -150px;
+}
+
+
+
+.actionBtn{
+    text-align: center;
+    background-color: #757778;
+    color: #fff;
+    //border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-appearance:caret;
+    padding: 3px;
+    width: 150px;
+}
+
+.actionBtn:hover{
+     background: #bbb;
+     
+}
+
+.enrollBtn{
+    text-align: center;
+    background-color: #f5f5f5;
+    //border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-appearance:caret;
+
+    padding: 3px;
+    width: 100px;
+}
+
+.enrollBtn:hover{
+     background: #bbb;
+     
+}
+
+.completedBtn{
+    text-align: center;
+    background-color: #d9edf7;
+    //border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    //color: #ffffff;
+    -webkit-appearance:caret;
+    padding: 3px;
+    width: 100px;
+}
+
+
+
+.mainPage
+{
+    text-align: center;
+    background-color: #d3d3d3;
+    //border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-appearance:caret;
+    padding: 3px;
+    width: 150px;
+}
+
+.mainPage:hover{
+     background: #bbb;
+     
+}
+
+#back
+{
+    float: bottom;
+    padding:10px;
+    margin-top: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+#enroll
+{
+    float: bottom;
+    //margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d3d3d3;
+    width: 125px;
+    border-radius: 5px;
+}
+
+
+#enroll2
+{
+    float: bottom;
+    //margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d3d3d3;
+    width: 125px;
+    border-radius: 5px;
+}
+
+#studentInfo{
+    border: thick;
+    
+}
+
+#infoCaption{
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: 19pt;
+}
+
+.infoRow{
+    background: black;
+    color: white;
+    font-size: 11px;
+    padding: 3px;
+    margin-right: -20px;
+}
+
+.infoRow2{
+    font-size: 11px;
+    padding: 3px;
+    margin-right: -20px;
+}
+
+#infoTable {
+    margin-right: -20px;
+}
+
+#snapshot {
+    background-color:#800000;
+    color:white;
+    font-style: italic;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#detailedInfo{
+    margin-left: 0px;
+}
+
+#updatedInfoRow {
+
+}
+
+#finalEnroll
+{
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #006400;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.formValues {
+    font-size: 18px;
+    text-align: right;
+    width: 150px;
+    float: left;
+}
+
+#MajMinForm {
+    margin-top: 20px;
+}
+
+#submit {
+    padding:5px;
+    margin-top: 10px;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: green;
+    border-radius: 5px;
+    
+}
+
+#picture {width:100px; height: 250px; background-color:#ffffff;}
+#picture a.small, #picture a.small:visited { display:block; width:100px; height:100px; text-decoration:none; background:#ffffff; top:0; left:0; border:0;}
+#picture a img {border:0;}
+#picture a.small:hover {text-decoration:none; background-color:#ffffff;; color:#ffffff;}
+#picture a .large {display:block; position:absolute; width:0; height:0; border:0; top:0; left:0;}
+#picture a.small:hover .large {display:block; position:absolute; top: 200px; left:350px; width:800px; height:257px; }
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:60px; margin-left:-160px;
+    width:300px; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; 
+    border:2px solid #FFF;  color:#EEE;
+    background:#333 url(cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:2px;        
+    box-shadow: 0px 0px 8px 4px #666;
+    /*opacity: 0.8;*/
+}
+
+#dialogoverlay{
+	display: none;
+	opacity: .5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #666;
+	border-radius:1px; 
+	width:300px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:15px; padding:10px; color:#ffffff; }
+#dialogbox > div > #dialogboxbody{ background:#003580; padding:10px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }

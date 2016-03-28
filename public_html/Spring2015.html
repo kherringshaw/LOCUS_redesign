@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+              <!-- Le styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css"/>
+        <link rel="stylesheet" href="css/Style.css" type="text/css"/>       
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="js/jquery.diagram.js"></script> 
+        <style type="text/css">
+            body {
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
+        </style>
+
+    <!--Load the AJAX API-->
+    <script src="js/buttonScripts.js"></script>     
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+ 
+    <title>LOCUS - Spring Schedule</title>
+    
+        <!-- FAVICON -->
+<link rel="icon" href="images/favicon.ico" />
+  </head>
+    <body>
+
+        
+        <div class="row-fluid" > 
+            <div class="span12 backgroundColor" >
+            <div id="header">LOCUS</div><br>
+            <div id="header">Student Snapshot <p id="name">Welcome, Nick Hayward</p></div></div>
+            
+        
+            <div class="row-fluid">
+                        
+                <div class="span2 " id="shoppingCart"> 
+                    <div id="header2">Class Cart</div>
+                    <div id="bodyCart">*Enrollment date is April 9*</div>
+                    <center><select id="enrollSemester">  
+                    <option value="0">Semester</option>
+                    <option value="1">Summer 2015</option>
+                    <option value="2">Fall 2015</option>
+                    </select></center>
+                
+                    <div id="bodyCart">Pending enrollment:</div>
+                    <div id="bodyCart">- None</div>
+                    <center><select id="Schedules" onchange="schedulesFunction()">  
+                    <option value="0">View Schedule</option>
+                    <option value="1">Spring 2015</option>
+                    <option value="2">Fall 2014</option>
+                    <option value="3">Summer 2014</option>
+                    </select></center></div>
+
+<div class="span8">
+        
+<table id="classTable">
+        
+        <tr>
+        <th class="classHeading">Class</th>
+        <th class="classHeading">Class Name</th>
+        <th class="classHeading">Day/Time</th>
+        <th class="classHeading">Professor</th>
+        <th class="classHeading">Campus</th>
+        <th class="classHeading">Room Number</th>
+        <th class="classHeading">Meeting dates</th>
+        
+        </tr>
+        <tr class="classRow">
+            <td class="classData">Bio 205</td>
+            <td class="classData">Cellular biology</td>
+            <td class="classData">M/W 10:00-11:15am</td>
+            <td class="classData">Professor Altman</td>
+            <td class="classData">LSC</td>
+            <td class="classData">Dumbach 135</td>
+            <td class="classData">1/20-5/9</td>
+        </tr>
+        <tr class="classRow">
+            <td class="classData">Philosophy 215</td>
+            <td class="classData">Logic</td>
+            <td class="classData">T/Th 1:00-2:15pm</td>
+            <td class="classData">Professor Lyons</td>
+            <td class="classData">LSC</td>
+            <td class="classData">Cuneo 213</td>
+            <td class="classData">1/20-5/9</td>
+            
+        </tr>
+        <tr class="classRow">
+            <td class="classData">Comp 250</td>
+            <td class="classData">Introduction to Java</td>
+            <td class="classData">T/Th 2:30-4:00</td>
+            <td class="classData">Professor Ricci</td>
+            <td class="classData">WTC</td>
+            <td class="classData">Corboy 901</td>
+            <td class="classData">1/20-5/9</td>
+            
+        </tr>
+        <tr class="classRow">
+            <td class="classData">Communications 106</td>
+            <td class="classData">Speech</td>
+            <td class="classData">M 4:00-6:30pm</td>
+            <td class="classData">Professor Clarke</td>
+            <td class="classData">WTC</td>
+            <td class="classData">Lewis Towers 611</td>
+            <td class="classData">1/20-5/9</td>
+            
+        </tr>
+        <tr class="classRow">
+            <td class="classData">Economics 202</td>
+            <td class="classData">Macro Economics</td>
+            <td class="classData">M 1:00-3:30pm</td>
+            <td class="classData">Professor Cappell</td>
+            <td class="classData">WTC</td>
+            <td class="classData">Corboy 425</td>
+            <td class="classData">1/20-5/9</td>
+            
+        </tr>    
+        
+        <caption id="classCaption">Spring 2015 Class Schedule</caption>
+ 
+    </table>
+    
+    <div id="picture">
+<a class="small" href="#nogo"><img src="images/schedule_sm.jpg" title="see schedule" />
+<img class="large" src="images/schedule.jpg" title="schedule" /></a>
+</div>
+    </div>
+    
+        
+    <div class="span2">
+        <br><br>
+
+        <button type="button" class="mainPage" onclick="mainPageClick();">Main Page</button>
+    
+    </div>
+    </div><!--/row-->
+        
+        <div class="container-fluid">            
+                        <div class="row-fluid">
+                            <div class="span2"></div>
+                            <div class="page-header"></div>
+                        </div>
+        <div class="row-fluid">
+            <div class="span2"></div>
+            
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="transcriptPageClick();">Transcripts</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="advisorsPageClick();">Advisors</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="financesPageClick();">Financial Info</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="catalogPageClick();">Course Catalog</button></div>
+            <div class="span2">
+                <button type="button" class="actionBtn" onclick="majMinPageClick();">Change Major/Minor</button></div></div></div>
+
+                </div>
+        
+        
+
+
+    
+</body>
+       
+</html>
